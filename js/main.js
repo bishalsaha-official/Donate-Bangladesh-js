@@ -18,7 +18,7 @@ document.getElementById('donate-noakhali-btn').addEventListener('click', functio
         alert('Something went Wrong. Try Again')
         return
     }
-    
+    alert('Donate your money has been Successful')
     let totalDonateNoakhali = donateNoakhaliValue + balanceNoakhali;
     let newMainBalance = mainBalanceNoakhali - donateNoakhaliValue;
     document.getElementById('noakhali-donation-amount').innerText = totalDonateNoakhali;
@@ -60,6 +60,7 @@ document.getElementById('donate-feni-btn').addEventListener('click', function(){
         return
     }
     
+    alert('Donate your money has been Successful')
     let totalDonateFeni = donateFeniValue + balanceFeni;
     let newMainBalance = mainBalanceFeni - donateFeniValue;
     document.getElementById('feni-donation-amount').innerText = totalDonateFeni;
@@ -78,7 +79,6 @@ document.getElementById('donate-feni-btn').addEventListener('click', function(){
     div.appendChild(p);
     div.appendChild(p1);
     document.getElementById('history').appendChild(div);
-
 })
 
 // For Quota
@@ -102,6 +102,7 @@ document.getElementById('donate-quota-btn').addEventListener('click', function()
         return
     }
     
+    alert('Donate your money has been Successful')
     let totalDonateQuota = donateQuotaValue + balanceQuota;
     let newMainBalance = mainBalanceQuota - donateQuotaValue;
     document.getElementById('quota-donation-amount').innerText = totalDonateQuota;
@@ -130,4 +131,14 @@ document.getElementById('donation-section-btn').addEventListener('click', functi
 
 document.getElementById('history-section-btn').addEventListener('click', function(){
     showSection('history');
+})
+
+document.getElementById('donation-section-btn').addEventListener('click', function(){
+    document.getElementById('donation-section-btn').classList.add('bg-primaryBtn')
+    document.getElementById('history-section-btn').classList.remove('bg-primaryBtn')
+})
+
+document.getElementById('history-section-btn').addEventListener('click', function(){
+    document.getElementById('history-section-btn').classList.add('bg-primaryBtn')
+    document.getElementById('donation-section-btn').classList.remove('bg-primaryBtn')
 })
