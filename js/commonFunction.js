@@ -17,3 +17,11 @@ function donationTitle(id){
     const titleTxt = document.getElementById(id).innerText;
     return titleTxt;
 }
+
+// Show Section
+function showSection(id){
+    document.getElementById('donation').classList.add('hidden');
+    document.getElementById('history').classList.add('hidden');
+    // Show the section
+    document.getElementById(id).classList.remove('hidden');
+}

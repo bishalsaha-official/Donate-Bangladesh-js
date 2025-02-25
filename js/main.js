@@ -121,3 +121,13 @@ document.getElementById('donate-quota-btn').addEventListener('click', function()
     div.appendChild(p1);
     document.getElementById('history').appendChild(div);
 })
+
+
+// For show the section
+document.getElementById('donation-section-btn').addEventListener('click', function(){
+    showSection('donation');
+})
+
+document.getElementById('history-section-btn').addEventListener('click', function(){
+    showSection('history');
+})
