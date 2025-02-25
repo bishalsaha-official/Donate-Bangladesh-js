@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Donate Bangladesh</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Daisy Ui CLI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primaryBtn: '#B4F461',
+                        primaryBg: '#F9F7F3',
+                        secondaryBg: '#F3F3F3',
+                        primaryTxt: '#111111'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .lexend-normal {
+            font-family: "Lexend", serif;
+            font-optical-sizing: auto;
+        }
+    </style>
 </head>
-<body>
-    <!--  -->
+
+<body class="lexend-normal ">
+    <!-- Header Section Start -->
+    <header class="bg-primaryBg">
+        <div class="navbar py-5 max-w-7xl mx-auto">
+            <div class="navbar-start">
+                <button class="btn bg-primaryBtn">Blog</button>
+            </div>
+            <div class="navbar-center">
+                <div class="flex items-center gap-2">
+                    <img src="images/logo.png" alt="">
+                    <h2 class="font-bold text-primaryTxt text-xl">Donate Bangladesh</h2>
+                </div>
+            </div>
+            <div class="navbar-end">
+                <div class="flex items-center gap-2">
+                    <img src="images/coin.png" alt="">
+                    <p class="text-primaryTxt font-bold text-xl"><span id="main-balance">5500</span> <span>BDT</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Main section Start -->
+    <main class="fles justify-center">
+
+
+    </main>
+    <footer class="bg-primaryBg py-10 mt-10"></footer>
 </body>
+
 </html>
